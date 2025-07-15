@@ -1,9 +1,6 @@
----
-
-````markdown
 # Pri-MCCD Technical Validation and Baseline Experiments
 
-This repository provides baseline model evaluation and feature analysis code for the **Pri-MCCD** dataset — a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
+This repository provides baseline model evaluation and feature analysis code for the **Pri-MCCD** dataset, a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
 
 ---
 
@@ -89,9 +86,4 @@ clbian@ouc.edu.cn
 
 ---
 
-```
 
----
-
-
-```
