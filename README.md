@@ -28,10 +28,9 @@ You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test dif
 - `lstm`
 - `tcn`
 
-
 You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--no_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
 
-Example usage:
+### ✅ Example usage:
 
 ```bash
 python main.py \
@@ -39,6 +38,7 @@ python main.py \
   --acoustic_encoder_type gru \
   --save_name gru_ablation \
   --use_transformer_fusion
+
 
 ## 🔍 IS09 Acoustic Feature Analysis
 
