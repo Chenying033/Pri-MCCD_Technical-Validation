@@ -17,7 +17,7 @@ This repository provides baseline model evaluation and feature analysis code for
 
 ## ✅ Baseline Model Validation 
 
-We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal emotion/climate recognition task.
+We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal climate recognition task.
 
 ---
 
