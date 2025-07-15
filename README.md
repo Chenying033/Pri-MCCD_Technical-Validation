@@ -31,7 +31,7 @@ You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test dif
 
 
 
-You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--use_attention_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
+You can also optionally disable the fusion module (e.g., transformer-based fusion)  by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
 
 ### ✅ Example usage:
 
