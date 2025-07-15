@@ -1,24 +1,28 @@
-# Pri-MCCD_Technical-Validation
+---
 
-This repository provides baseline model evaluation and feature analysis code for the Pri-MCCD dataset, a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
+````markdown
+# Pri-MCCD Technical Validation and Baseline Experiments
+
+This repository provides baseline model evaluation and feature analysis code for the **Pri-MCCD** dataset — a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
 
 ---
 
 ## 📂 Repository Structure
 
-| Folder / File      | Description                                                |
-| ------------------ | ---------------------------------------------------------- |
-| `main.py`          | Main training script for baseline and ablation experiments |
-| `IS09_analysis.py` | Statistical analysis of key IS09 acoustic features         |
-| `models/`          | Encoders, fusion modules, and classification heads         |
-| `configs/`         | Parameter configurations for different experimental setups |
+| File / Folder         | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `main.py`             | Main training script for baseline and ablation experiments                  |
+| `IS09_analysis.py`    | Statistical analysis of key IS09 acoustic features                          |
+| `models/`             | Encoders, fusion modules, and classification heads                          |
 
 
 ---
 
-## ✅ Baseline Model Validation (SRC Section)
+## ✅ Baseline Model Validation 
 
 We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal emotion/climate classification task.
+
+---
 
 ### 🔧 Encoder Configuration and Ablation
 
@@ -28,6 +32,8 @@ You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test dif
 - `lstm`
 - `tcn`
 
+
+
 You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--no_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
 
 ### ✅ Example usage:
@@ -36,9 +42,11 @@ You can also optionally disable the fusion module (e.g., transformer-based fusio
 python main.py \
   --visual_encoder_type gru \
   --acoustic_encoder_type gru \
-  --save_name gru_ablation \
+  --save_name gru \
   --use_transformer_fusion
+````
 
+---
 
 ## 🔍 IS09 Acoustic Feature Analysis
 
@@ -51,13 +59,13 @@ The script `IS09_analysis.py` performs statistical inspection of the acoustic fe
 
 These indicators reflect underlying affective cues and help interpret the contribution of acoustic modality in multimodal fusion.
 
-Run the script via:
+### ✅ Run the script:
 
 ```bash
 python IS09_analysis.py
 ```
 
-It will generate visualizations and aggregated metrics stored .
+The analysis outputs visualizations and aggregated metrics stored in the `/results/IS09/` directory.
 
 ---
 
@@ -70,11 +78,20 @@ It will generate visualizations and aggregated metrics stored .
 
 ---
 
-
----
-
 ## 📫 Contact
 
 For dataset access or questions, please contact:
 clbian@ouc.edu.cn
 
+---
+
+
+
+---
+
+```
+
+---
+
+
+```
