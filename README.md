@@ -20,18 +20,26 @@ This repository provides baseline model evaluation and feature analysis code for
 
 We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal emotion/climate classification task.
 
-### 🔧 Example command for test :
+### 🔧 Encoder Configuration and Ablation
+
+You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test different encoder combinations, such as:
+
+- `gru`
+- `lstm`
+- `tcn`
+
+
+You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--no_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
+
+Example usage:
 
 ```bash
 python main.py \
   --visual_encoder_type gru \
   --acoustic_encoder_type gru \
-  --save_name gru_trans \
+  --save_name gru_ablation \
   --use_transformer_fusion
-```
 
-You can adjust --visual_encoder_type and --acoustic_encoder_type to test various combinations (e.g., tcn, lstm), and optionally disable fusion components for further ablation.
----
 
 ## 🔍 IS09 Acoustic Feature Analysis
 
