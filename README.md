@@ -1,4 +1,4 @@
-# Pri-MCCD Technical Validation and Baseline Experiments
+# Pri-MCCD Technical Validation
 
 This repository provides baseline model evaluation and feature analysis code for the **Pri-MCCD** dataset, a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
 
@@ -17,7 +17,7 @@ This repository provides baseline model evaluation and feature analysis code for
 
 ## ✅ Baseline Model Validation 
 
-We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal emotion/climate classification task.
+We provide a reproducible baseline using standard GRU encoders and transformer-based fusion. This is intended to establish initial accuracy and robustness on Pri-MCCD's multimodal emotion/climate recognition task.
 
 ---
 
@@ -31,7 +31,7 @@ You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test dif
 
 
 
-You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--no_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
+You can also optionally disable the fusion module (e.g., transformer-based fusion) using flags like `--use_attention_fusion` or by omitting `--use_transformer_fusion`, to perform ablation studies on modality interaction mechanisms.
 
 ### ✅ Example usage:
 
@@ -52,7 +52,7 @@ The script `IS09_analysis.py` performs statistical inspection of the acoustic fe
 * **Mean Pitch Distribution**
 * **Energy Standard Deviation**
 * **F0 Standard Deviation**
-* **Stacked Climate Proportions** by acoustic indicators
+
 
 These indicators reflect underlying affective cues and help interpret the contribution of acoustic modality in multimodal fusion.
 
@@ -62,7 +62,7 @@ These indicators reflect underlying affective cues and help interpret the contri
 python IS09_analysis.py
 ```
 
-The analysis outputs visualizations and aggregated metrics stored in the `/results/IS09/` directory.
+The analysis outputs visualizations and aggregated metrics.
 
 ---
 
