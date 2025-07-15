@@ -1,6 +1,6 @@
 # Pri-MCCD_Technical-Validation
 
-This repository provides baseline model evaluation and feature analysis code for the **Pri-MCCD** dataset — a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
+This repository provides baseline model evaluation and feature analysis code for the Pri-MCCD dataset, a multimodal classroom climate dataset collected from real-world primary school lessons. The code supports pilot studies, ablation experiments, and acoustic feature analysis using standard multimodal pipelines.
 
 ---
 
@@ -12,7 +12,7 @@ This repository provides baseline model evaluation and feature analysis code for
 | `IS09_analysis.py` | Statistical analysis of key IS09 acoustic features         |
 | `models/`          | Encoders, fusion modules, and classification heads         |
 | `configs/`         | Parameter configurations for different experimental setups |
-| `results/`         | Logs, outputs, and saved model checkpoints                 |
+
 
 ---
 
