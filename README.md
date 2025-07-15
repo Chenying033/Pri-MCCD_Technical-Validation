@@ -30,8 +30,7 @@ python main.py \
   --use_transformer_fusion
 ```
 
-You can adjust `--visual_encoder_type` and `--acoustic_encoder_type` to test various combinations (e.g., `tcn`, `lstm`), and optionally disable fusion components for further ablation.
-
+You can adjust --visual_encoder_type and --acoustic_encoder_type to test various combinations (e.g., tcn, lstm), and optionally disable fusion components for further ablation.
 ---
 
 ## 🔍 IS09 Acoustic Feature Analysis
